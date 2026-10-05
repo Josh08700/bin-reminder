@@ -16,6 +16,11 @@ tasks:
     cmds:
       - uv run python -m bin_reminder.main
 
+  docker:
+    desc: Build and run the app with Docker Compose
+    cmds:
+      - docker compose up --build
+
   test:
     desc: Run the test suite
     cmds:
