@@ -18,3 +18,9 @@ task docker
 
 Open [http://localhost:8080](http://localhost:8080). Stop the app with
 `Ctrl+C`, or run `docker compose down` in another terminal.
+
+## Continuous integration
+
+GitHub Actions runs the tests and builds the Docker image on pushes and pull
+requests. The image is built for validation only; it is not published or
+deployed.
