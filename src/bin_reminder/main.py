@@ -6,7 +6,7 @@ def build_ui() -> None:
     with ui.column().classes("w-full max-w-xl mx-auto p-6"):
         ui.label("Bin Reminder").classes("text-3xl font-bold")
         ui.label(f"Today is: {get_current_date().strftime('%A')}")
-        ui.label("This week you need to take out the () bin")
+        ui.label("This week on thursday evening you need to take out the () bin")
 
 
 ui.run(build_ui, title="Bin Reminder", host="0.0.0.0", port=8080, reload=False)
