@@ -1,0 +1,22 @@
+[project]
+name = "bin-reminder"
+version = "0.1.0"
+description = "A simple app for tracking bin collection reminders"
+readme = "README.md"
+authors = [
+    { name = "Josh08700", email = "tiredtears_@outlook.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "nicegui>=3.17.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]

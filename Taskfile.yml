@@ -1,0 +1,22 @@
+version: "3"
+
+tasks:
+  default:
+    desc: List all available commands
+    cmds:
+      - task --list
+
+  setup:
+    desc: Install project dependencies
+    cmds:
+      - uv sync
+
+  run:
+    desc: Run the Bin Reminder application
+    cmds:
+      - uv run python -m bin_reminder.main
+
+  test:
+    desc: Run the test suite
+    cmds:
+      - uv run pytest
